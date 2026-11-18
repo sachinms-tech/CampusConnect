@@ -2,305 +2,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b18">
-<title>CampusConnect | RIT Hassan</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>CampusConnect | RIT Hassan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-<header class="header">
-  <a href="#home" class="brand">
-    <span class="brand-icon">CC</span>
-    <span><strong>CampusConnect</strong><small>Rajeev Institute of Technology</small></span>
+<header class="site-header">
+  <a class="brand" href="#home">
+    <span class="brand-symbol">✦</span>
+    <span>Campus<span class="accent">Connect</span></span>
   </a>
-  <nav aria-label="Main navigation">
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+  <nav class="nav-links" id="navLinks">
     <a href="#home">Home</a>
+    <a href="#features">Features</a>
     <a href="#events">Events</a>
     <a href="#resources">Resources</a>
     <a href="#notices">Notices</a>
-    <a href="#lostfound">Lost &amp; Found</a>
+    <a href="#lostfound">Lost & Found</a>
     <a href="#about">About</a>
   </nav>
 </header>
 
-<section class="institution-logos">
-  <div class="logo-item">
-    <div class="logo-image"><img src="./images/rit-logo.jpeg" alt="RIT Logo"></div>
-    <span>Rajeev Institute of Technology</span>
-  </div>
-  <div class="logo-item">
-    <div class="logo-image"><img src="./images/cse-logo.jpeg" alt="CSE Logo"></div>
-    <span>Department of CSE</span>
-  </div>
-  <div class="logo-item">
-    <div class="logo-image"><img src="./images/gdg-logo.jpeg" alt="GDG Logo"></div>
-    <span>GDG on Campus</span>
-  </div>
-</section>
-
 <main>
-
-<section class="hero" id="home">
-  <div>
-    <span class="eyebrow">✦ YOUR DIGITAL CAMPUS EXPERIENCE</span>
-    <h1>One Campus.<br>One Community.<br><span>Endless Opportunities.</span></h1>
-    <p>Discover college events, access learning resources, stay updated and connect with your campus community — all in one place.</p>
-    <div class="hero-actions">
-      <a href="#events" class="btn primary">Explore Events →</a>
-      <a href="#resources" class="btn secondary">Explore Resources</a>
+  <section class="hero section" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">YOUR CAMPUS. ONE CONNECTED SPACE.</span>
+      <h1>Welcome to <span class="gradient-text">CampusConnect</span></h1>
+      <p class="hero-subtitle">Discover campus events, access learning resources, stay updated and connect with your college community.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#events">Explore Events <span>→</span></a>
+        <a class="btn btn-outline" href="#features">Explore Features</a>
+      </div>
+      <div class="hero-note"><span class="live-dot"></span> Made for the RIT Hassan student community</div>
     </div>
-    <p class="hero-note">✦ Built for students, powered by community.</p>
-  </div>
 
-  <div class="hero-card">
-    <div class="card-top"><span>STUDENT OVERVIEW</span><span>● CAMPUS HUB</span></div>
-    <div class="rit-large">CC</div>
-    <h2>Welcome to CampusConnect</h2>
-    <div class="overview-grid">
-      <div><strong>06</strong><small>Events</small></div>
-      <div><strong>08</strong><small>Resources</small></div>
-      <div><strong>04</strong><small>Updates</small></div>
+    <div class="hero-image-wrap">
+      <img class="campus-image" src="./images/rit-campus.jpg" alt="Rajeev Institute of Technology Hassan campus">
+      <div class="image-caption">
+        <span>RAJEEV INSTITUTE OF TECHNOLOGY</span>
+        <strong>Hassan, Karnataka</strong>
+      </div>
     </div>
-    <h3>Upcoming Activity</h3>
-    <div class="activity">💻 <div><strong>Code Sprint</strong><small>Technical Event</small></div></div>
-    <div class="activity">🤖 <div><strong>AI Innovation Workshop</strong><small>Learning &amp; Technology</small></div></div>
-  </div>
-</section>
+  </section>
 
-<section class="stats">
-  <div><strong>01</strong><span>Connected Campus</span></div>
-  <div><strong>04+</strong><span>Student Features</span></div>
-  <div><strong>24/7</strong><span>Digital Access</span></div>
-  <div><strong>∞</strong><span>Opportunities</span></div>
-</section>
-
-<section class="section" id="features">
-  <div class="section-heading">
-    <span class="eyebrow">CAMPUS MADE SIMPLE</span>
-    <h2>Everything You Need.<br><span>One Platform.</span></h2>
-    <p>Explore the tools designed to improve your student experience.</p>
-  </div>
-
-  <div class="feature-grid">
-    <a href="#events" class="feature-card">
-      <span>📅</span><h3>Event Hub</h3>
-      <p>Discover workshops, technical events, fests and campus activities.</p>
-      <b>Explore Events →</b>
-    </a>
-    <a href="#resources" class="feature-card">
-      <span>📚</span><h3>Resource Hub</h3>
-      <p>Find study materials, programming resources and learning links.</p>
-      <b>Explore Resources →</b>
-    </a>
-    <a href="#notices" class="feature-card">
-      <span>🔔</span><h3>Smart Notice Board</h3>
-      <p>Stay informed about important announcements and deadlines.</p>
-      <b>View Notices →</b>
-    </a>
-    <a href="#lostfound" class="feature-card">
-      <span>🔎</span><h3>Lost &amp; Found Hub</h3>
-      <p>Report missing belongings, list found items and help return them to their owners.</p>
-      <b>Open Lost &amp; Found →</b>
-    </a>
-  </div>
-</section>
-
-<section class="section events-section" id="events">
-  <div class="section-heading">
-    <span class="eyebrow">DISCOVER &amp; PARTICIPATE</span>
-    <h2>Explore Campus Events</h2>
-    <p>Discover exciting opportunities and be part of campus life.</p>
-  </div>
-
-  <div class="filters">
-    <button class="filter-btn active" data-category="All">All Events</button>
-    <button class="filter-btn" data-category="Technical">Technical</button>
-    <button class="filter-btn" data-category="Workshop">Workshops</button>
-    <button class="filter-btn" data-category="Cultural">Cultural</button>
-  </div>
-  <div class="event-grid" id="eventGrid"></div>
-</section>
-
-<section class="section" id="resources">
-  <div class="section-heading">
-    <span class="eyebrow">LEARN SOMETHING NEW</span>
-    <h2>Student Resource Hub</h2>
-    <p>Explore useful learning platforms and improve your skills.</p>
-  </div>
-
-  <div class="filters">
-    <button class="resource-filter active" data-resource="All">All Resources</button>
-    <button class="resource-filter" data-resource="Programming">Programming</button>
-    <button class="resource-filter" data-resource="Web Development">Web Development</button>
-    <button class="resource-filter" data-resource="AI &amp; ML">AI &amp; ML</button>
-    <button class="resource-filter" data-resource="Career">Career</button>
-  </div>
-  <div class="resource-grid" id="resourceGrid"></div>
-</section>
-
-<section class="section notices-section" id="notices">
-  <div class="section-heading">
-    <span class="eyebrow">WHAT'S HAPPENING</span>
-    <h2>Latest Campus Notices</h2>
-    <p>Important updates and announcements for students.</p>
-  </div>
-
-  <div class="notice-list">
-    <article class="notice">
-      <span>📢</span>
-      <div><span class="tag">Announcement</span><h3>Welcome to CampusConnect</h3>
-      <p>Explore campus events, learning resources and student updates in one place.</p></div>
-    </article>
-    <article class="notice">
-      <span>💻</span>
-      <div><span class="tag">Technology</span><h3>Improve Your Technical Skills</h3>
-      <p>Explore programming and web development learning resources.</p></div>
-    </article>
-    <article class="notice">
-      <span>🎓</span>
-      <div><span class="tag">Community</span><h3>Stay Connected</h3>
-      <p>Check this notice board regularly for campus announcements.</p></div>
-    </article>
-  </div>
-</section>
-
-<!-- NEW MAIN FEATURE: LOST AND FOUND -->
-<section class="section lostfound-section" id="lostfound">
-  <div class="section-heading">
-    <span class="eyebrow">HELP YOUR CAMPUS COMMUNITY</span>
-    <h2>Campus <span>Lost &amp; Found</span></h2>
-    <p>Lost something or found an item on campus? Create a listing and help reunite belongings with their owners.</p>
-  </div>
-
-  <div class="lostfound-intro">
-    <div>
-      <span class="lf-icon">🔎</span>
-      <h3>Lost an item?</h3>
-      <p>Post what you lost, where you last saw it and when.</p>
-      <button class="btn primary" id="reportLostBtn" type="button">Report Lost Item</button>
+  <section class="brand-strip" aria-label="Institution and community logos">
+    <div class="brand-item">
+      <img src="./images/rit-logo.jpeg" alt="RIT logo">
+      <span>RIT Hassan</span>
     </div>
-    <div>
-      <span class="lf-icon">🤝</span>
-      <h3>Found an item?</h3>
-      <p>Share a basic description so its owner can identify it.</p>
-      <button class="btn secondary" id="reportFoundBtn" type="button">Report Found Item</button>
+    <div class="brand-item">
+      <img src="./images/cse-logo.jpeg" alt="CSE department logo">
+      <span>CSE Department</span>
     </div>
-  </div>
-
-  <div class="lf-toolbar">
-    <input id="lostFoundSearch" type="search" placeholder="Search by item or location..." aria-label="Search lost and found items">
-    <select id="lostFoundFilter" aria-label="Filter listings">
-      <option value="All">All listings</option>
-      <option value="Lost">Lost items</option>
-      <option value="Found">Found items</option>
-      <option value="Resolved">Resolved</option>
-    </select>
-  </div>
-
-  <p class="lf-count" id="lostFoundCount" aria-live="polite">No listings yet.</p>
-  <div class="lostfound-grid" id="lostFoundGrid"></div>
-
-  <div class="safety-note">
-    <strong>🔐 Student safety reminder</strong>
-    <p>Do not post passwords, full ID numbers, private addresses or sensitive personal information. For valuable items, phones or student ID cards, contact the college office/security desk and verify ownership before handing anything over.</p>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="about-card">
-    <span class="eyebrow">ABOUT OUR PROJECT</span>
-    <h2>Connecting Campus.<br><span>Empowering Students.</span></h2>
-    <p>CampusConnect is a smart college community platform designed to bring students, campus events, learning resources and useful campus services together in one convenient digital space.</p>
-
-    <div class="college-info">
-      <img src="./images/rit-logo.jpeg" alt="RIT Logo">
-      <div><h3>Rajeev Institute of Technology</h3><p>Hassan, Karnataka</p><p>Department of Computer Science &amp; Engineering</p></div>
+    <div class="brand-item">
+      <img src="./images/gdg-logo.jpeg" alt="GDG on Campus logo">
+      <span>GDG on Campus</span>
     </div>
-    <div class="college-info">
-      <img src="./images/cse-logo.jpeg" alt="CSE Logo">
-      <div><h3>Department of CSE</h3><p>Rajeev Institute of Technology</p></div>
-    </div>
-    <div class="college-info">
-      <img src="./images/gdg-logo.jpeg" alt="GDG Logo">
-      <div><h3>GDG on Campus</h3><p>RIT Hassan</p></div>
-    </div>
-    <p class="project-label">A student project built for a connected campus experience.</p>
-  </div>
-</section>
+  </section>
 
+  <section class="stats section">
+    <div class="stat-card"><strong>06</strong><span>Campus Events</span></div>
+    <div class="stat-card"><strong>08</strong><span>Learning Resources</span></div>
+    <div class="stat-card"><strong>24/7</strong><span>Information Access</span></div>
+    <div class="stat-card"><strong>01</strong><span>Connected Campus</span></div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="section-heading">
+      <span class="eyebrow">CAMPUS MADE SMARTER</span>
+      <h2>Everything you need, <span class="gradient-text">in one place</span></h2>
+      <p>Useful tools and information designed to make student life easier.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Event Hub</h3>
+        <p>Discover technical, cultural and learning events and register for activities.</p>
+        <a href="#events">Explore events →</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>Resource Hub</h3>
+        <p>Find useful programming, web development, AI and career learning links.</p>
+        <a href="#resources">Explore resources →</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">📢</div>
+        <h3>Notice Board</h3>
+        <p>Stay informed about important campus announcements and updates.</p>
+        <a href="#notices">View notices →</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🔎</div>
+        <h3>Lost & Found</h3>
+        <p>Report misplaced belongings and browse items reported by students.</p>
+        <a href="#lostfound">Open Lost & Found →</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🚨</div>
+        <h3>Emergency Awareness</h3>
+        <p>Quickly find important emergency contact information and safety guidance.</p>
+        <a href="#emergency">View emergency help →</a>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>Student Community</h3>
+        <p>A shared digital space to discover opportunities and campus activities.</p>
+        <a href="#about">Know more →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="events">
+    <div class="section-heading">
+      <span class="eyebrow">LEARN • PARTICIPATE • GROW</span>
+      <h2>Campus <span class="gradient-text">Event Hub</span></h2>
+      <p>Explore opportunities and take part in campus activities.</p>
+    </div>
+    <div class="filter-row" id="eventFilters">
+      <button class="filter-btn active" data-filter="All">All Events</button>
+      <button class="filter-btn" data-filter="Technical">Technical</button>
+      <button class="filter-btn" data-filter="Workshop">Workshops</button>
+      <button class="filter-btn" data-filter="Cultural">Cultural</button>
+    </div>
+    <div class="event-grid" id="eventGrid"></div>
+  </section>
+
+  <section class="section" id="resources">
+    <div class="section-heading">
+      <span class="eyebrow">KEEP LEARNING</span>
+      <h2>Student <span class="gradient-text">Resource Hub</span></h2>
+      <p>Hand-picked learning links to support your academic and career journey.</p>
+    </div>
+    <div class="filter-row" id="resourceFilters">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Programming">Programming</button>
+      <button class="filter-btn" data-filter="Web Development">Web Development</button>
+      <button class="filter-btn" data-filter="AI & ML">AI & ML</button>
+      <button class="filter-btn" data-filter="Career">Career</button>
+    </div>
+    <div class="resource-grid" id="resourceGrid"></div>
+  </section>
+
+  <section class="section section-alt" id="notices">
+    <div class="section-heading">
+      <span class="eyebrow">IMPORTANT UPDATES</span>
+      <h2>Smart <span class="gradient-text">Notice Board</span></h2>
+      <p>Keep important campus information within easy reach.</p>
+    </div>
+    <div class="notice-list">
+      <article class="notice-card">
+        <span class="notice-tag">CAMPUS</span>
+        <div><h3>Welcome to CampusConnect</h3><p>Explore the platform for campus events, learning resources and student services.</p></div>
+      </article>
+      <article class="notice-card">
+        <span class="notice-tag purple">TECHNICAL</span>
+        <div><h3>Technical Activities</h3><p>Check the Event Hub for coding challenges, workshops and technology events.</p></div>
+      </article>
+      <article class="notice-card">
+        <span class="notice-tag orange">STUDENT</span>
+        <div><h3>Lost an Item?</h3><p>Use the Lost & Found section to report a missing or found belonging.</p></div>
+      </article>
+    </div>
+    <p class="small-note">Demo announcements are provided for project demonstration. Official notices should be verified with the college.</p>
+  </section>
+
+  <section class="section" id="lostfound">
+    <div class="section-heading">
+      <span class="eyebrow">HELP EACH OTHER</span>
+      <h2>Lost & <span class="gradient-text">Found Hub</span></h2>
+      <p>Report lost or found belongings and help reunite items with their owners.</p>
+    </div>
+
+    <div class="lostfound-layout">
+      <form class="panel lostfound-form" id="lostFoundForm">
+        <h3>Report an Item</h3>
+        <label for="itemType">Report type</label>
+        <select id="itemType" required>
+          <option value="Lost">I lost an item</option>
+          <option value="Found">I found an item</option>
+        </select>
+
+        <label for="itemTitle">Item name</label>
+        <input id="itemTitle" type="text" placeholder="e.g. Black wallet" required>
+
+        <label for="itemDescription">Description</label>
+        <textarea id="itemDescription" rows="3" placeholder="Describe the item..." required></textarea>
+
+        <label for="itemLocation">Last seen / found location</label>
+        <input id="itemLocation" type="text" placeholder="e.g. Library" required>
+
+        <label for="itemContact">Contact information</label>
+        <input id="itemContact" type="text" placeholder="Email or phone number" required>
+
+        <button class="btn btn-primary full-btn" type="submit">Submit Report</button>
+        <p class="form-message" id="lostFoundMessage" aria-live="polite"></p>
+      </form>
+
+      <div class="panel listings-panel">
+        <div class="listings-heading">
+          <h3>Recent Reports</h3>
+          <span id="listingCount">0 reports</span>
+        </div>
+        <div class="listing-controls">
+          <input id="lostFoundSearch" type="search" placeholder="Search items...">
+          <select id="lostFoundFilter">
+            <option value="All">All reports</option>
+            <option value="Lost">Lost</option>
+            <option value="Found">Found</option>
+            <option value="Resolved">Resolved</option>
+          </select>
+        </div>
+        <div id="lostFoundGrid" class="lostfound-grid"></div>
+      </div>
+    </div>
+    <p class="small-note">Demo limitation: reports are stored in this browser only. They are not automatically shared across devices.</p>
+  </section>
+
+  <section class="section emergency-section" id="emergency">
+    <div class="emergency-content">
+      <span class="eyebrow">SAFETY FIRST</span>
+      <h2>Emergency <span>Awareness</span></h2>
+      <p>In an emergency, stay calm, move to a safe place and contact the appropriate emergency service.</p>
+      <div class="emergency-number">
+        <span>National Emergency Number (India)</span>
+        <a href="tel:112">112</a>
+      </div>
+      <p class="emergency-tip">Use 112 for urgent assistance from emergency services in India. For campus-specific help, contact the college office or security desk.</p>
+    </div>
+    <div class="emergency-symbol">🛡️</div>
+  </section>
+
+  <section class="section about-section" id="about">
+    <div class="section-heading">
+      <span class="eyebrow">ABOUT THE PROJECT</span>
+      <h2>Connecting our <span class="gradient-text">Campus Community</span></h2>
+      <p>CampusConnect is a student-focused web platform concept created to bring useful campus information and services together in one accessible place.</p>
+    </div>
+    <div class="about-card">
+      <h3>Rajeev Institute of Technology, Hassan</h3>
+      <p>Department of Computer Science & Engineering</p>
+      <p class="about-highlight">Design • Develop • Deploy</p>
+      <p>Created with the spirit of innovation and collaboration.</p>
+      <a href="https://rithassan.ac.in/" target="_blank" rel="noopener">Visit RIT Official Website ↗</a>
+    </div>
+  </section>
 </main>
 
-<footer>
-  <div class="footer-brand">
-    <span class="brand-icon">CC</span>
-    <div><strong>CampusConnect</strong><small>One Campus. One Community.</small></div>
-  </div>
-  <p>© 2026 CampusConnect | Rajeev Institute of Technology, Hassan</p>
+<footer class="footer">
+  <a class="brand footer-brand" href="#home"><span class="brand-symbol">✦</span> Campus<span class="accent">Connect</span></a>
+  <p>Designed for the RIT Hassan student community.</p>
+  <p class="footer-bottom">© <span id="currentYear"></span> CampusConnect. Student project demonstration.</p>
 </footer>
 
-<!-- EXISTING EVENT REGISTRATION MODAL -->
-<div class="modal hidden" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="selectedEvent">
-  <div class="modal-box">
-    <button class="close-btn" id="closeModal" type="button" aria-label="Close">×</button>
-    <span class="eyebrow">JOIN THE EVENT!</span>
-    <h2 id="selectedEvent">Event Registration</h2>
-    <form id="eventForm">
-      <label for="studentName">Student Name</label>
-      <input id="studentName" type="text" placeholder="Enter your name" required>
-      <label for="studentEmail">Email Address</label>
+<!-- Event details and registration modal -->
+<div class="modal" id="eventModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+    <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    <div id="eventDetails"></div>
+    <form id="eventForm" class="registration-form">
+      <h3>Register for this Event</h3>
+      <input type="hidden" id="eventId">
+      <label for="studentName">Student name</label>
+      <input id="studentName" type="text" placeholder="Enter your full name" required>
+      <label for="studentEmail">Email address</label>
       <input id="studentEmail" type="email" placeholder="Enter your email" required>
       <label for="studentUSN">USN / Student ID</label>
       <input id="studentUSN" type="text" placeholder="Enter your USN" required>
-      <button class="btn primary submit-btn" type="submit">Confirm Registration</button>
-      <p id="successMessage" class="success-message" aria-live="polite"></p>
-    </form>
-  </div>
-</div>
-
-<!-- NEW LOST AND FOUND FORM -->
-<div class="modal hidden" id="lostFoundModal" role="dialog" aria-modal="true" aria-labelledby="lostFoundModalTitle">
-  <div class="modal-box lf-modal-box">
-    <button class="close-btn" id="closeLostFoundModal" type="button" aria-label="Close">×</button>
-    <span class="eyebrow">CAMPUS COMMUNITY SUPPORT</span>
-    <h2 id="lostFoundModalTitle">Create a listing</h2>
-
-    <form id="lostFoundForm">
-      <input type="hidden" id="lfType" value="Lost">
-
-      <label for="lfItem">Item name</label>
-      <input id="lfItem" maxlength="60" placeholder="e.g. Blue water bottle" required>
-
-      <label for="lfCategory">Category</label>
-      <select id="lfCategory" required>
-        <option value="">Choose a category</option>
-        <option>Books &amp; Notes</option>
-        <option>Electronics</option>
-        <option>ID Card</option>
-        <option>Keys</option>
-        <option>Wallet / Bag</option>
-        <option>Clothing</option>
-        <option>Other</option>
-      </select>
-
-      <label for="lfDescription">Description (avoid sensitive details)</label>
-      <textarea id="lfDescription" maxlength="240" rows="3" placeholder="Describe the item briefly..." required></textarea>
-
-      <label for="lfLocation">Campus location</label>
-      <input id="lfLocation" maxlength="80" placeholder="e.g. Library, canteen, lab..." required>
-
-      <label for="lfDate">Date</label>
-      <input id="lfDate" type="date" required>
-
-      <label for="lfReporter">Your first name (optional)</label>
-      <input id="lfReporter" maxlength="40" placeholder="First name only">
-
-      <p class="form-privacy">Do not enter your phone number, password, full USN or other private information. This demo stores listings only in this browser.</p>
-
-      <button class="btn primary submit-btn" type="submit">Publish Listing</button>
-      <p id="lfMessage" class="success-message" aria-live="polite"></p>
+      <div id="registrationChoice"></div>
+      <button class="btn btn-primary full-btn" type="submit">Confirm Registration</button>
+      <p id="eventMessage" class="form-message" aria-live="polite"></p>
     </form>
   </div>
 </div>
