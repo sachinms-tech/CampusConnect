@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect | RIT Hassan</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a href="#home" class="brand">
+    <span class="brand-icon">CC</span>
+    <span><strong>CampusConnect</strong><small>Rajeev Institute of Technology</small></span>
+  </a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#resources">Resources</a>
+    <a href="#notices">Notices</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="institution-logos">
+  <div class="logo-item">
+    <div class="logo-image"><img src="./images/rit-logo.jpeg" alt="RIT Logo"></div>
+    <span>Rajeev Institute of Technology</span>
+  </div>
+  <div class="logo-item">
+    <div class="logo-image"><img src="./images/cse-logo.jpeg" alt="CSE Logo"></div>
+    <span>Department of CSE</span>
+  </div>
+  <div class="logo-item">
+    <div class="logo-image"><img src="./images/gdg-logo.jpeg" alt="GDG Logo"></div>
+    <span>GDG on Campus</span>
+  </div>
+</section>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <span class="eyebrow">✦ YOUR DIGITAL CAMPUS EXPERIENCE</span>
+    <h1>One Campus.<br>One Community.<br><span>Endless Opportunities.</span></h1>
+    <p>Discover college events, access learning resources, stay updated and connect with your campus community — all in one place.</p>
+    <div class="hero-actions">
+      <a href="#events" class="btn primary">Explore Events →</a>
+      <a href="#resources" class="btn secondary">Explore Resources</a>
+    </div>
+    <p class="hero-note">✦ Built for students, powered by community.</p>
+  </div>
+
+  <div class="hero-card">
+    <div class="card-top"><span>STUDENT OVERVIEW</span><span>● LIVE</span></div>
+    <div class="rit-large">CC</div>
+    <h2>Welcome to CampusConnect</h2>
+    <div class="overview-grid">
+      <div><strong>06</strong><small>Events</small></div>
+      <div><strong>08</strong><small>Resources</small></div>
+      <div><strong>04</strong><small>Updates</small></div>
+    </div>
+    <h3>Upcoming Activity</h3>
+    <div class="activity">💻 <div><strong>Code Sprint</strong><small>Technical Event</small></div></div>
+    <div class="activity">🤖 <div><strong>AI Innovation Workshop</strong><small>Learning & Technology</small></div></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>01</strong><span>Connected Campus</span></div>
+  <div><strong>03+</strong><span>Core Features</span></div>
+  <div><strong>24/7</strong><span>Digital Access</span></div>
+  <div><strong>∞</strong><span>Opportunities</span></div>
+</section>
+
+<section class="section" id="features">
+  <div class="section-heading">
+    <span class="eyebrow">CAMPUS MADE SIMPLE</span>
+    <h2>Everything You Need.<br><span>One Platform.</span></h2>
+    <p>Explore the tools designed to improve your student experience.</p>
+  </div>
+  <div class="feature-grid">
+    <a href="#events" class="feature-card"><span>📅</span><h3>Event Hub</h3><p>Discover workshops, technical events, fests and campus activities.</p><b>Explore Events →</b></a>
+    <a href="#resources" class="feature-card"><span>📚</span><h3>Resource Hub</h3><p>Find study materials, programming resources and learning links.</p><b>Explore Resources →</b></a>
+    <a href="#notices" class="feature-card"><span>🔔</span><h3>Smart Notice Board</h3><p>Stay informed about important announcements and deadlines.</p><b>View Notices →</b></a>
+  </div>
+</section>
+
+<section class="section events-section" id="events">
+  <div class="section-heading">
+    <span class="eyebrow">DISCOVER & PARTICIPATE</span>
+    <h2>Explore Campus Events</h2>
+    <p>Discover exciting opportunities and be part of campus life.</p>
+  </div>
+  <div class="filters">
+    <button class="filter-btn active" data-category="All">All Events</button>
+    <button class="filter-btn" data-category="Technical">Technical</button>
+    <button class="filter-btn" data-category="Workshop">Workshops</button>
+    <button class="filter-btn" data-category="Cultural">Cultural</button>
+  </div>
+  <div class="event-grid" id="eventGrid"></div>
+</section>
+
+<section class="section" id="resources">
+  <div class="section-heading">
+    <span class="eyebrow">LEARN SOMETHING NEW</span>
+    <h2>Student Resource Hub</h2>
+    <p>Explore useful learning platforms and improve your skills.</p>
+  </div>
+  <div class="filters">
+    <button class="resource-filter active" data-resource="All">All Resources</button>
+    <button class="resource-filter" data-resource="Programming">Programming</button>
+    <button class="resource-filter" data-resource="Web Development">Web Development</button>
+    <button class="resource-filter" data-resource="AI & ML">AI & ML</button>
+    <button class="resource-filter" data-resource="Career">Career</button>
+  </div>
+  <div class="resource-grid" id="resourceGrid"></div>
+</section>
+
+<section class="section notices-section" id="notices">
+  <div class="section-heading">
+    <span class="eyebrow">WHAT'S HAPPENING</span>
+    <h2>Latest Campus Notices</h2>
+    <p>Important updates and announcements for students.</p>
+  </div>
+  <div class="notice-list">
+    <article class="notice"><span>📢</span><div><span class="tag">Announcement</span><h3>Welcome to CampusConnect</h3><p>Explore campus events, learning resources and student updates in one place.</p></div></article>
+    <article class="notice"><span>💻</span><div><span class="tag">Technology</span><h3>Improve Your Technical Skills</h3><p>Explore programming and web development learning resources.</p></div></article>
+    <article class="notice"><span>🎓</span><div><span class="tag">Community</span><h3>Stay Connected</h3><p>Check this notice board regularly for campus announcements.</p></div></article>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="about-card">
+    <span class="eyebrow">ABOUT OUR PROJECT</span>
+    <h2>Connecting Campus.<br><span>Empowering Students.</span></h2>
+    <p>CampusConnect is a smart college community platform designed to bring students, campus events and learning resources together in one convenient digital space.</p>
+    <div class="college-info">
+      <img src="./images/rit-logo.jpeg" alt="RIT Logo">
+      <div><h3>Rajeev Institute of Technology</h3><p>Hassan, Karnataka</p><p>Department of Computer Science & Engineering</p></div>
+    </div>
+    <div class="college-info">
+      <img src="./images/cse-logo.jpeg" alt="CSE Logo">
+      <div><h3>Department of CSE</h3><p>Rajeev Institute of Technology</p></div>
+    </div>
+    <div class="college-info">
+      <img src="./images/gdg-logo.jpeg" alt="GDG Logo">
+      <div><h3>GDG on Campus</h3><p>RIT Hassan</p></div>
+    </div>
+    <p class="project-label">A student project built for a connected campus experience.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand"><span class="brand-icon">CC</span><div><strong>CampusConnect</strong><small>One Campus. One Community.</small></div></div>
+  <p>© 2026 CampusConnect | Rajeev Institute of Technology, Hassan</p>
+</footer>
+
+<div class="modal hidden" id="eventModal">
+  <div class="modal-box">
+    <button class="close-btn" id="closeModal" type="button">×</button>
+    <span class="eyebrow">JOIN THE EVENT!</span>
+    <h2 id="selectedEvent">Event Registration</h2>
+    <form id="eventForm">
+      <label for="studentName">Student Name</label>
+      <input id="studentName" type="text" placeholder="Enter your name" required>
+      <label for="studentEmail">Email Address</label>
+      <input id="studentEmail" type="email" placeholder="Enter your email" required>
+      <label for="studentUSN">USN / Student ID</label>
+      <input id="studentUSN" type="text" placeholder="Enter your USN" required>
+      <button class="btn primary submit-btn" type="submit">Confirm Registration</button>
+      <p id="successMessage" class="success-message"></p>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
