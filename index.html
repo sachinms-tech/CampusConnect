@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
 <title>CampusConnect | RIT Hassan</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
@@ -15,11 +16,12 @@
     <span class="brand-icon">CC</span>
     <span><strong>CampusConnect</strong><small>Rajeev Institute of Technology</small></span>
   </a>
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="#home">Home</a>
     <a href="#events">Events</a>
     <a href="#resources">Resources</a>
     <a href="#notices">Notices</a>
+    <a href="#lostfound">Lost &amp; Found</a>
     <a href="#about">About</a>
   </nav>
 </header>
@@ -40,6 +42,7 @@
 </section>
 
 <main>
+
 <section class="hero" id="home">
   <div>
     <span class="eyebrow">✦ YOUR DIGITAL CAMPUS EXPERIENCE</span>
@@ -53,7 +56,7 @@
   </div>
 
   <div class="hero-card">
-    <div class="card-top"><span>STUDENT OVERVIEW</span><span>● LIVE</span></div>
+    <div class="card-top"><span>STUDENT OVERVIEW</span><span>● CAMPUS HUB</span></div>
     <div class="rit-large">CC</div>
     <h2>Welcome to CampusConnect</h2>
     <div class="overview-grid">
@@ -63,13 +66,13 @@
     </div>
     <h3>Upcoming Activity</h3>
     <div class="activity">💻 <div><strong>Code Sprint</strong><small>Technical Event</small></div></div>
-    <div class="activity">🤖 <div><strong>AI Innovation Workshop</strong><small>Learning & Technology</small></div></div>
+    <div class="activity">🤖 <div><strong>AI Innovation Workshop</strong><small>Learning &amp; Technology</small></div></div>
   </div>
 </section>
 
 <section class="stats">
   <div><strong>01</strong><span>Connected Campus</span></div>
-  <div><strong>03+</strong><span>Core Features</span></div>
+  <div><strong>04+</strong><span>Student Features</span></div>
   <div><strong>24/7</strong><span>Digital Access</span></div>
   <div><strong>∞</strong><span>Opportunities</span></div>
 </section>
@@ -80,19 +83,38 @@
     <h2>Everything You Need.<br><span>One Platform.</span></h2>
     <p>Explore the tools designed to improve your student experience.</p>
   </div>
+
   <div class="feature-grid">
-    <a href="#events" class="feature-card"><span>📅</span><h3>Event Hub</h3><p>Discover workshops, technical events, fests and campus activities.</p><b>Explore Events →</b></a>
-    <a href="#resources" class="feature-card"><span>📚</span><h3>Resource Hub</h3><p>Find study materials, programming resources and learning links.</p><b>Explore Resources →</b></a>
-    <a href="#notices" class="feature-card"><span>🔔</span><h3>Smart Notice Board</h3><p>Stay informed about important announcements and deadlines.</p><b>View Notices →</b></a>
+    <a href="#events" class="feature-card">
+      <span>📅</span><h3>Event Hub</h3>
+      <p>Discover workshops, technical events, fests and campus activities.</p>
+      <b>Explore Events →</b>
+    </a>
+    <a href="#resources" class="feature-card">
+      <span>📚</span><h3>Resource Hub</h3>
+      <p>Find study materials, programming resources and learning links.</p>
+      <b>Explore Resources →</b>
+    </a>
+    <a href="#notices" class="feature-card">
+      <span>🔔</span><h3>Smart Notice Board</h3>
+      <p>Stay informed about important announcements and deadlines.</p>
+      <b>View Notices →</b>
+    </a>
+    <a href="#lostfound" class="feature-card">
+      <span>🔎</span><h3>Lost &amp; Found Hub</h3>
+      <p>Report missing belongings, list found items and help return them to their owners.</p>
+      <b>Open Lost &amp; Found →</b>
+    </a>
   </div>
 </section>
 
 <section class="section events-section" id="events">
   <div class="section-heading">
-    <span class="eyebrow">DISCOVER & PARTICIPATE</span>
+    <span class="eyebrow">DISCOVER &amp; PARTICIPATE</span>
     <h2>Explore Campus Events</h2>
     <p>Discover exciting opportunities and be part of campus life.</p>
   </div>
+
   <div class="filters">
     <button class="filter-btn active" data-category="All">All Events</button>
     <button class="filter-btn" data-category="Technical">Technical</button>
@@ -108,11 +130,12 @@
     <h2>Student Resource Hub</h2>
     <p>Explore useful learning platforms and improve your skills.</p>
   </div>
+
   <div class="filters">
     <button class="resource-filter active" data-resource="All">All Resources</button>
     <button class="resource-filter" data-resource="Programming">Programming</button>
     <button class="resource-filter" data-resource="Web Development">Web Development</button>
-    <button class="resource-filter" data-resource="AI & ML">AI & ML</button>
+    <button class="resource-filter" data-resource="AI &amp; ML">AI &amp; ML</button>
     <button class="resource-filter" data-resource="Career">Career</button>
   </div>
   <div class="resource-grid" id="resourceGrid"></div>
@@ -124,10 +147,65 @@
     <h2>Latest Campus Notices</h2>
     <p>Important updates and announcements for students.</p>
   </div>
+
   <div class="notice-list">
-    <article class="notice"><span>📢</span><div><span class="tag">Announcement</span><h3>Welcome to CampusConnect</h3><p>Explore campus events, learning resources and student updates in one place.</p></div></article>
-    <article class="notice"><span>💻</span><div><span class="tag">Technology</span><h3>Improve Your Technical Skills</h3><p>Explore programming and web development learning resources.</p></div></article>
-    <article class="notice"><span>🎓</span><div><span class="tag">Community</span><h3>Stay Connected</h3><p>Check this notice board regularly for campus announcements.</p></div></article>
+    <article class="notice">
+      <span>📢</span>
+      <div><span class="tag">Announcement</span><h3>Welcome to CampusConnect</h3>
+      <p>Explore campus events, learning resources and student updates in one place.</p></div>
+    </article>
+    <article class="notice">
+      <span>💻</span>
+      <div><span class="tag">Technology</span><h3>Improve Your Technical Skills</h3>
+      <p>Explore programming and web development learning resources.</p></div>
+    </article>
+    <article class="notice">
+      <span>🎓</span>
+      <div><span class="tag">Community</span><h3>Stay Connected</h3>
+      <p>Check this notice board regularly for campus announcements.</p></div>
+    </article>
+  </div>
+</section>
+
+<!-- NEW MAIN FEATURE: LOST AND FOUND -->
+<section class="section lostfound-section" id="lostfound">
+  <div class="section-heading">
+    <span class="eyebrow">HELP YOUR CAMPUS COMMUNITY</span>
+    <h2>Campus <span>Lost &amp; Found</span></h2>
+    <p>Lost something or found an item on campus? Create a listing and help reunite belongings with their owners.</p>
+  </div>
+
+  <div class="lostfound-intro">
+    <div>
+      <span class="lf-icon">🔎</span>
+      <h3>Lost an item?</h3>
+      <p>Post what you lost, where you last saw it and when.</p>
+      <button class="btn primary" id="reportLostBtn" type="button">Report Lost Item</button>
+    </div>
+    <div>
+      <span class="lf-icon">🤝</span>
+      <h3>Found an item?</h3>
+      <p>Share a basic description so its owner can identify it.</p>
+      <button class="btn secondary" id="reportFoundBtn" type="button">Report Found Item</button>
+    </div>
+  </div>
+
+  <div class="lf-toolbar">
+    <input id="lostFoundSearch" type="search" placeholder="Search by item or location..." aria-label="Search lost and found items">
+    <select id="lostFoundFilter" aria-label="Filter listings">
+      <option value="All">All listings</option>
+      <option value="Lost">Lost items</option>
+      <option value="Found">Found items</option>
+      <option value="Resolved">Resolved</option>
+    </select>
+  </div>
+
+  <p class="lf-count" id="lostFoundCount" aria-live="polite">No listings yet.</p>
+  <div class="lostfound-grid" id="lostFoundGrid"></div>
+
+  <div class="safety-note">
+    <strong>🔐 Student safety reminder</strong>
+    <p>Do not post passwords, full ID numbers, private addresses or sensitive personal information. For valuable items, phones or student ID cards, contact the college office/security desk and verify ownership before handing anything over.</p>
   </div>
 </section>
 
@@ -135,10 +213,11 @@
   <div class="about-card">
     <span class="eyebrow">ABOUT OUR PROJECT</span>
     <h2>Connecting Campus.<br><span>Empowering Students.</span></h2>
-    <p>CampusConnect is a smart college community platform designed to bring students, campus events and learning resources together in one convenient digital space.</p>
+    <p>CampusConnect is a smart college community platform designed to bring students, campus events, learning resources and useful campus services together in one convenient digital space.</p>
+
     <div class="college-info">
       <img src="./images/rit-logo.jpeg" alt="RIT Logo">
-      <div><h3>Rajeev Institute of Technology</h3><p>Hassan, Karnataka</p><p>Department of Computer Science & Engineering</p></div>
+      <div><h3>Rajeev Institute of Technology</h3><p>Hassan, Karnataka</p><p>Department of Computer Science &amp; Engineering</p></div>
     </div>
     <div class="college-info">
       <img src="./images/cse-logo.jpeg" alt="CSE Logo">
@@ -151,16 +230,21 @@
     <p class="project-label">A student project built for a connected campus experience.</p>
   </div>
 </section>
+
 </main>
 
 <footer>
-  <div class="footer-brand"><span class="brand-icon">CC</span><div><strong>CampusConnect</strong><small>One Campus. One Community.</small></div></div>
+  <div class="footer-brand">
+    <span class="brand-icon">CC</span>
+    <div><strong>CampusConnect</strong><small>One Campus. One Community.</small></div>
+  </div>
   <p>© 2026 CampusConnect | Rajeev Institute of Technology, Hassan</p>
 </footer>
 
-<div class="modal hidden" id="eventModal">
+<!-- EXISTING EVENT REGISTRATION MODAL -->
+<div class="modal hidden" id="eventModal" role="dialog" aria-modal="true" aria-labelledby="selectedEvent">
   <div class="modal-box">
-    <button class="close-btn" id="closeModal" type="button">×</button>
+    <button class="close-btn" id="closeModal" type="button" aria-label="Close">×</button>
     <span class="eyebrow">JOIN THE EVENT!</span>
     <h2 id="selectedEvent">Event Registration</h2>
     <form id="eventForm">
@@ -171,7 +255,52 @@
       <label for="studentUSN">USN / Student ID</label>
       <input id="studentUSN" type="text" placeholder="Enter your USN" required>
       <button class="btn primary submit-btn" type="submit">Confirm Registration</button>
-      <p id="successMessage" class="success-message"></p>
+      <p id="successMessage" class="success-message" aria-live="polite"></p>
+    </form>
+  </div>
+</div>
+
+<!-- NEW LOST AND FOUND FORM -->
+<div class="modal hidden" id="lostFoundModal" role="dialog" aria-modal="true" aria-labelledby="lostFoundModalTitle">
+  <div class="modal-box lf-modal-box">
+    <button class="close-btn" id="closeLostFoundModal" type="button" aria-label="Close">×</button>
+    <span class="eyebrow">CAMPUS COMMUNITY SUPPORT</span>
+    <h2 id="lostFoundModalTitle">Create a listing</h2>
+
+    <form id="lostFoundForm">
+      <input type="hidden" id="lfType" value="Lost">
+
+      <label for="lfItem">Item name</label>
+      <input id="lfItem" maxlength="60" placeholder="e.g. Blue water bottle" required>
+
+      <label for="lfCategory">Category</label>
+      <select id="lfCategory" required>
+        <option value="">Choose a category</option>
+        <option>Books &amp; Notes</option>
+        <option>Electronics</option>
+        <option>ID Card</option>
+        <option>Keys</option>
+        <option>Wallet / Bag</option>
+        <option>Clothing</option>
+        <option>Other</option>
+      </select>
+
+      <label for="lfDescription">Description (avoid sensitive details)</label>
+      <textarea id="lfDescription" maxlength="240" rows="3" placeholder="Describe the item briefly..." required></textarea>
+
+      <label for="lfLocation">Campus location</label>
+      <input id="lfLocation" maxlength="80" placeholder="e.g. Library, canteen, lab..." required>
+
+      <label for="lfDate">Date</label>
+      <input id="lfDate" type="date" required>
+
+      <label for="lfReporter">Your first name (optional)</label>
+      <input id="lfReporter" maxlength="40" placeholder="First name only">
+
+      <p class="form-privacy">Do not enter your phone number, password, full USN or other private information. This demo stores listings only in this browser.</p>
+
+      <button class="btn primary submit-btn" type="submit">Publish Listing</button>
+      <p id="lfMessage" class="success-message" aria-live="polite"></p>
     </form>
   </div>
 </div>
